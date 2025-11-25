@@ -11,7 +11,7 @@ class MovieService {
     final response = await http.get(Uri.parse(baseUrl));
     if (response.statusCode == 200) {
       final result = jsonDecode(response.body);
-      final movieData = result['data'];
+      final movieData = result;
 
       List<MovieModel> listMovieModel = [];
       for (var data in movieData) {

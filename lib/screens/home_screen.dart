@@ -40,9 +40,7 @@ class _HomeScreensState extends State<HomeScreens> {
           );
         },
       ),
-      
     );
-    
   }
 
   Widget _movieList(movie) {
@@ -62,10 +60,8 @@ class _HomeScreensState extends State<HomeScreens> {
             movie.title,
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          subtitle: Text(
-            "${movie.release_date} | ${movie.genre} | ${movie.rating}",
-          ),
-          
+          subtitle: Text("${movie.release_date}  | ${movie.rating}"),
+
           // trailing: IconButton(
           //   icon: const Icon(Icons.favorite_border),
           //   onPressed: () async {
